@@ -4,9 +4,22 @@
 }
 
 <h1>Index</h1>
+<h1 class="text-center"> All Products</h1>
+<a id="btn" class="btn btn-info float-rigt">Add Products</a>
 
-<a id="btn" class="btn btn-info">Add Products</a>
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Product Name </th>
+      <th scope="col">Product category</th>
+      <th scope="col">Product Price</th>
+    </tr>
+  </thead>
+  <tbody id="tdata">
+    
+  </tbody>
+</table>
 
     
 
@@ -22,7 +35,7 @@
       </div>
       <div class="modal-body">
 
-       <form id="myform">
+       <form id="myform" method="Post">
           <div class="form-group">
             <label for="ProductName">Product Name</label>
             <input type="text" class="form-control" id="Pname" name="Pname" aria-describedby="emailHelp">

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AjaxImplementationMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240618141228_Product")]
+    [Migration("20240618160934_Product")]
     partial class Product
     {
         /// <inheritdoc />
