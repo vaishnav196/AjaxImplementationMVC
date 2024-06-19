@@ -17,17 +17,11 @@ namespace AjaxImplementationMVC.Controllers
         }
 
         public IActionResult AddProduct(Product p)
-        {  
-            //db.products.Add(p);
-            //db.SaveChanges();
-            //return new JsonResult("");
-            if (ModelState.IsValid)
-            {
-                db.products.Add(p);
-                db.SaveChanges();
-                return Json(new { success = true });
-            }
-            return Json(new { success = false, errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage) });
+        {
+            db.products.Add(p);
+            db.SaveChanges();
+            return new JsonResult("");
+
 
         }
 
